@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>anas ouardini</title>
+    <link rel="icon" href="imgs/avatar.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Comfortaa|Monoton|Poiret+One" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- fixed elements-->
+    <div class="overlay" onclick="menu_appearance_cancel()"></div>
+    <div class="owner">
+        <div class="avatar" onclick="img_view(&quot;avatar.png&quot;)"></div>
+        <div class="name">anas ouardini</div>
+    </div>
+    <div class="menuBar" id="menu">
+        <div class="outer_circle" onclick="menu_animate()">
+            <div class="inner_circle" id="button"></div>
+        </div><a>
+            <div class="option welcome" onclick="page_status(&quot;welcome&quot;)">welcome<div class="page_on"></div>
+            </div>
+        </a><a>
+            <div class="option about" onclick="page_status(&quot;about&quot;)">about<div class="page_off"></div>
+            </div>
+        </a><a>
+            <div class="option projects" onclick="page_status(&quot;projects&quot;)">projects<div class="page_off"></div>
+            </div>
+        </a><a>
+            <div class="option contact" onclick="page_status(&quot;contact&quot;)">contact<div class="page_off"></div>
+            </div>
+        </a>
+    </div>
+    <div class="container">
+        <div id="welcome">
+            <div class="welcome_content_container">
+                <div class="welcome_port">
+                    <div class="left"> </div>
+                    <div class="right"></div>
+                </div>
+                <div class="welcome_content" id="w_content">
+                    <div class="welcome_sign">hi there</div>
+                    <p>Lorem ipsum dolor sit amet, qui no inani scripserit. Antiopam assueverit ut qui, ius sonet scriptorem an. Mel meliore principes theophrastus id. Ex eos impedit .</p>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div class="bg_top about_bg_top"></div>
+            <div class="bg_right about_bg_right"> </div>
+            <div class="bg_bottom about_bg_bottom"></div>
+            <div id="about_description">
+                <div class="nav about_nav">
+                    <div class="option ab_option" onclick="about_navigator(&quot;about&quot;)">about me</div>
+                    <div class="option" onclick="about_navigator(&quot;skills&quot;)">my skills</div>
+                    <div class="option prog_option" onclick="about_navigator(&quot;progression&quot;)">my progression</div>
+                </div>
+                <div class="desc_header">about me</div>
+                <div class="img" onclick="img_view(&quot;nice_pic.png&quot;)"></div>
+                <div class="paragraph">
+                    <p> Lorem ipsum dolor sit amet, pri iusto partiendo at, ei facer homero eos. Duo eu tractatos philosophia, ne libris meliore per. Corrumpit definitiones cu his. Saperet appareat vivendum vix cu, fierent repudiare ut vix, solum summo verear mea ex. Congue lucilius pri an. Ius te commune corrumpit, an mel inimicus explicari.</p>
+                </div>
+            </div>
+            <div class="bg_top skills_bg_top"></div>
+            <div class="bg_bottom skills_bg_bottom"></div>
+            <div class="skills" id="skills">
+                <div class="nav about_nav">
+                    <div class="option ab_option" onclick="about_navigator(&quot;about&quot;)">about me</div>
+                    <div class="option" onclick="about_navigator(&quot;skills&quot;)">my skills</div>
+                    <div class="option prog_option" onclick="about_navigator(&quot;progression&quot;)">my progression</div>
+                </div>
+                <div class="header">my skills</div>
+                <div class="design_skills">
+                    <div class="header">design skills</div>
+                    <ul>
+                        <li>Lorem ipsum</li>
+                        <li>dolor sit amet</li>
+                        <li>pri iusto partiendo</li>
+                        <li>Et molestie</li>
+                    </ul>
+                </div>
+                <div class="development_skills">
+                    <div class="header">dev skillls</div>
+                    <ul>
+                        <li>Lorem ipsum</li>
+                        <li>dolor sit amet</li>
+                        <li>pri iusto partiendo</li>
+                        <li>Et molestie</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg_top progression_bg_top"></div>
+            <div class="bg_bottom progression_bg_bottom"></div>
+            <div class="progression" id="progression">
+                <div class="nav about_nav">
+                    <div class="option ab_option" onclick="about_navigator(&quot;about&quot;)">about me</div>
+                    <div class="option" onclick="about_navigator(&quot;skills&quot;)">my skills</div>
+                    <div class="option prog_option" onclick="about_navigator(&quot;progression&quot;)">my progression</div>
+                </div>
+                <div class="header">my skills progression</div>
+                <div class="design_skills">
+                    <div class="header">design skills</div>
+                    <ul>
+                        <li>Lorem ipsum</li>
+                        <li>dolor sit amet</li>
+                        <li>pri iusto partiendo</li>
+                        <li>Et molestie</li>
+                    </ul>
+                </div>
+                <div class="development_skills">
+                    <div class="header">dev skillls</div>
+                    <ul>
+                        <li>Lorem ipsum</li>
+                        <li>dolor sit amet</li>
+                        <li>pri iusto partiendo</li>
+                        <li>Et molestie</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="projects">
+            <div class="bg_top proj_desc_bg_top_left"></div>
+            <div class="bg_right proj_desc_bg_right"></div>
+            <div class="bg_bottom proj_desc_bg_bottom_left"></div>
+            <div id="proj_description">
+                <div class="nav projs_nav">
+                    <div class="option projs_option" onclick="projs_navigator(&quot;about_projs&quot;)">about projects</div>
+                    <div class="option" onclick="projs_navigator(&quot;proj_1&quot;)">proj one</div>
+                    <div class="option proj2_option" onclick="projs_navigator(&quot;proj_2&quot;)">proj two</div>
+                </div>
+                <div class="header">about these projects</div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, pri iusto partiendo at, ei facer homero eos. Duo eu tractatos philosophia, ne libris meliore per. Corrumpit definitiones cu his. Saperet appareat vivendum vix cu, fierent repudiare ut vix, solum summo verear mea ex. Congue lucilius pri an. Ius te commune corrumpit, an mel inimicus explicari.</p>
+                </div>
+            </div>
+            <div class="bg_top proj1_bg_top"></div>
+            <div class="bg_bottom proj1_bg_bottom"></div>
+            <div class="proj proj_1">
+                <div class="nav projs_nav">
+                    <div class="option projs_option" onclick="projs_navigator(&quot;about_projs&quot;)">about projects</div>
+                    <div class="option" onclick="projs_navigator(&quot;proj_1&quot;)">proj one</div>
+                    <div class="option proj2_option" onclick="projs_navigator(&quot;proj_2&quot;)">proj two</div>
+                </div>
+                <div class="header">project 1</div>
+                <div class="imgs_section">
+                    <div class="img_1" onclick="img_view(&quot;owl.png&quot;)"></div>
+                    <div class="img_2" onclick="img_view(&quot;alternative_skull.png&quot;)"></div>
+                    <div class="img_3" onclick="img_view(&quot;fused_glass.png&quot;)"></div>
+                </div>
+                <div class="desc_section">
+                    <div class="p1">
+                        <h2>lorem ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, pri iusto partiendo at, ei facer homero eos. Duo eu tractatos philosophia, ne libris meliore per. Corrumpit definitiones cu his. Saperet appareat vivendum vix cu, fierent repudiare ut vix, solum summo verear mea ex. Congue lucilius pri an. Ius te commune corrumpit, an mel inimicus explicari.</p>
+                    </div>
+                </div>
+                <div class="project_link">live view of the project</div>
+            </div>
+            <div class="bg_top proj2_bg_top"></div>
+            <div class="bg_bottom proj2_bg_bottom"></div>
+            <div class="proj proj_2">
+                <div class="nav projs_nav">
+                    <div class="option projs_option" onclick="projs_navigator(&quot;about_projs&quot;)">about projects</div>
+                    <div class="option" onclick="projs_navigator(&quot;proj_1&quot;)">proj one</div>
+                    <div class="option proj2_option" onclick="projs_navigator(&quot;proj_2&quot;)">proj two</div>
+                </div>
+                <div class="header">project 2</div>
+                <div class="imgs_section">
+                    <div class="img_1" onclick="img_view(&quot;owl.png&quot;)"></div>
+                    <div class="img_2" onclick="img_view(&quot;alternative_skull.png&quot;)"></div>
+                    <div class="img_3" onclick="img_view(&quot;fused_glass.png&quot;)"></div>
+                </div>
+                <div class="desc_section">
+                    <div class="p1">
+                        <h2>lorem ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, pri iusto partiendo at, ei facer homero eos. Duo eu tractatos philosophia, ne libris meliore per. Corrumpit definitiones cu his. Saperet appareat vivendum vix cu, fierent repudiare ut vix, solum summo verear mea ex. Congue lucilius pri an. Ius te commune corrumpit, an mel inimicus explicari.</p>
+                    </div>
+                </div>
+                <div class="project_link">live view of the project</div>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="contact_container">
+                <div id="contact_me"><i class="fa fa-at" aria-hidden="true"> <span>anasouardini.webdeveloper@gmail.com</span></i><i class="fa fa-mobile" aria-hidden="true"> <span>+XXX XXX-XXX-XXX-X</span></i></div>
+                <div class="socialmedia"><a href="https://www.twitter.com/codeSolide" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"> <span>@codeSolide</span></i></a><a href="https://www.facebook.com/anas.ouardini.75" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"> <span>anas.ouardini.75</span></i></a><a href="https://www.github.com/codeSolide" target="_blank"> <i class="fa fa-github-square" aria-hidden="true"> <span>codeSolide</span></i></a><a href="https://www.codepen.io/codeSolide" target="_blank"> <i class="fa fa-codepen" aria-hidden="true"> <span>codeSolide</span></i></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
